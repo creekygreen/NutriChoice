@@ -1,4 +1,2 @@
 # NutriChoice
-Mobile Applications Development 
-Flutter
-Flutterflow
+Mobile Applications Development Project
