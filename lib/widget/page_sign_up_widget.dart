@@ -64,7 +64,7 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
               Navigator.of(context).pop();    //context.safePop();
             },
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0,
         ),
@@ -78,10 +78,10 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                 child: Container(
                   width: 100,
                   height: double.infinity,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.transparent,
                   ),
-                  alignment: AlignmentDirectional(0, -1),
+                  alignment: const AlignmentDirectional(0, -1),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -91,7 +91,7 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                         Container(
                           width: double.infinity,
                           height: 200,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.transparent,
                             borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(16),
@@ -100,9 +100,9 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                               topRight: Radius.circular(0),
                             ),
                           ),
-                          alignment: AlignmentDirectional(-1, 0),
+                          alignment: const AlignmentDirectional(-1, 0),
                           child: Align(
-                            alignment: AlignmentDirectional(0, 0),
+                            alignment: const AlignmentDirectional(0, 0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8),
                               child: Image.asset(
@@ -110,16 +110,16 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                                 width: MediaQuery.sizeOf(context).width,
                                 height: 326,
                                 fit: BoxFit.contain,
-                                alignment: Alignment(0, 0),
+                                alignment: const Alignment(0, 0),
                               ),
                             ),
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0, 0),
+                          alignment: const AlignmentDirectional(0, 0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 430,
                             ),
                             decoration: BoxDecoration(
@@ -127,9 +127,9 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                                   .secondaryBackground,
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0, 0),
+                              alignment: const AlignmentDirectional(0, 0),
                               child: Padding(
-                                padding: EdgeInsets.all(24),
+                                padding: const EdgeInsets.all(24),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -145,7 +145,7 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                                           ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 12, 0, 24),
                                       child: Text(
                                         'Let\'s get started by filling out the form below.',
@@ -158,9 +158,9 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 16),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: double.infinity,
                                         child: TextFormField(
                                           controller: _model
@@ -168,7 +168,7 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                                           focusNode: _model
                                               .emailAddressSignUpFocusNode,
                                           autofocus: true,
-                                          autofillHints: [AutofillHints.email],
+                                          autofillHints: const [AutofillHints.email],
                                           obscureText: false,
                                           decoration: InputDecoration(
                                             labelText: 'Email',
@@ -232,9 +232,9 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 16),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: double.infinity,
                                         child: TextFormField(
                                           controller:
@@ -242,7 +242,7 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                                           focusNode:
                                               _model.passwordSignUpFocusNode,
                                           autofocus: true,
-                                          autofillHints: [
+                                          autofillHints: const [
                                             AutofillHints.password
                                           ],
                                           obscureText:
@@ -327,9 +327,9 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 16),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: double.infinity,
                                         child: TextFormField(
                                           controller: _model
@@ -337,7 +337,7 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                                           focusNode: _model
                                               .passwordConfirmSignUpFocusNode,
                                           autofocus: true,
-                                          autofillHints: [
+                                          autofillHints: const [
                                             AutofillHints.password
                                           ],
                                           obscureText: !_model
@@ -423,7 +423,7 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 16),
                                       child: FFButtonWidget(
                                         onPressed: () {
@@ -434,10 +434,10 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                                           width: double.infinity,
                                           height: 44,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0, 0, 0, 0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0, 0, 0, 0),
                                           color: Colors.green,
                                           textStyle:
@@ -448,7 +448,7 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
                                                     color: Colors.white,
                                                   ),
                                           elevation: 3,
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Colors.transparent,
                                             width: 1,
                                           ),
@@ -460,9 +460,9 @@ class _PageSignUpWidgetState extends State<PageSignUpWidget> {
 
                                     // You will have to add an action on this rich text to go to your login page.
                                     Align(
-                                      alignment: AlignmentDirectional(0, 0),
+                                      alignment: const AlignmentDirectional(0, 0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0, 12, 0, 12),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
