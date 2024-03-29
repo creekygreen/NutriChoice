@@ -1,3 +1,3 @@
 # NutriChoice
 
-Mobapp MA1
+Mobapp MA1 Project
