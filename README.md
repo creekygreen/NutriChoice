@@ -1,3 +1,4 @@
 # NutriChoice
-
-Mobapp MA1 Project
+Mobile Applications Development 
+Flutter
+Flutterflow
