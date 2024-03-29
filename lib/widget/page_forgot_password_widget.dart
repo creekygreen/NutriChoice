@@ -55,7 +55,7 @@ class _PageForgotPasswordWidgetState extends State<PageForgotPasswordWidget> {
             Navigator.of(context).pop();
           },
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0,
       ),
@@ -65,20 +65,20 @@ class _PageForgotPasswordWidgetState extends State<PageForgotPasswordWidget> {
           Container(
             width: double.infinity,
             height: 90,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.transparent,
             ),
           ),
           Align(
-            alignment: AlignmentDirectional(0, -1),
+            alignment: const AlignmentDirectional(0, -1),
             child: Container(
               width: double.infinity,
-              constraints: BoxConstraints(
+              constraints: const BoxConstraints(
                 maxWidth: 570,
               ),
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: Padding(
-                padding: EdgeInsets.all(24),
+                padding: const EdgeInsets.all(24),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -93,7 +93,7 @@ class _PageForgotPasswordWidgetState extends State<PageForgotPasswordWidget> {
                               ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 24),
+                      padding: const EdgeInsetsDirectional.fromSTEB(0, 12, 0, 24),
                       child: Text(
                         'We will send you an email with a link to reset your password, please enter the email associated with your account below.',
                         style:
@@ -104,14 +104,14 @@ class _PageForgotPasswordWidgetState extends State<PageForgotPasswordWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 16),
-                      child: Container(
+                      padding: const EdgeInsetsDirectional.fromSTEB(0, 12, 0, 16),
+                      child: SizedBox(
                         width: double.infinity,
                         child: TextFormField(
                           controller:
                               _model.emailAddressForgotPasswordController,
                           focusNode: _model.emailAddressForgotPasswordFocusNode,
-                          autofillHints: [AutofillHints.email],
+                          autofillHints: const [AutofillHints.email],
                           obscureText: false,
                           decoration: InputDecoration(
                             labelText: 'Recovery Email Address',
@@ -151,7 +151,7 @@ class _PageForgotPasswordWidgetState extends State<PageForgotPasswordWidget> {
                             fillColor: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
                             contentPadding:
-                                EdgeInsetsDirectional.fromSTEB(24, 24, 20, 24),
+                                const EdgeInsetsDirectional.fromSTEB(24, 24, 20, 24),
                           ),
                           style: FlutterFlowTheme.of(context).bodyLarge,
                           maxLines: null,
@@ -164,7 +164,7 @@ class _PageForgotPasswordWidgetState extends State<PageForgotPasswordWidget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0, 0),
+                      alignment: const AlignmentDirectional(0, 0),
                       child: FFButtonWidget(
                         onPressed: () {
                           print('Button-SendPasswordResetLink pressed ...');
@@ -173,13 +173,13 @@ class _PageForgotPasswordWidgetState extends State<PageForgotPasswordWidget> {
                         options: FFButtonOptions(
                           width: double.infinity,
                           height: 50,
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
                           iconPadding:
-                              EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                              const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
                           color: Colors.green,
                           textStyle: FlutterFlowTheme.of(context).titleSmall,
                           elevation: 3,
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.transparent,
                             width: 1,
                           ),
