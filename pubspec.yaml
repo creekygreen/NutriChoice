@@ -25,8 +25,4 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-<<<<<<< HEAD
     - lib/assets/Bluemodernnaturalhealthywaterlogo11.png
-=======
-    - lib/assets/Bluemodernnaturalhealthywaterlogo11.png
->>>>>>> 799d477a5097c03ae2449528265534889be133ca
